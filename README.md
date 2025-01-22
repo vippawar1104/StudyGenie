@@ -1,4 +1,4 @@
-# StudyGenie: AI-powered Study Notes Generator
+# StudyGenie: AI-powered Summary Generator
 
 StudyGenie is an AI-powered study notes generator that leverages Hugging Face Transformers and PyTorch to summarize lecture materials and textbooks into concise, structured notes. It helps students save time by providing accurate, easily digestible content summaries, making learning more efficient.
 
