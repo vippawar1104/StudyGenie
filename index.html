@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to StudyGenie</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc, #ff8a00);
+            background-size: 300% 300%;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: gradientAnimation 8s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .welcome-container {
+            padding: 60px 70px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 450px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .welcome-container:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #ff8a00, #e52e71, #6a11cb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            line-height: 1.1;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+            opacity: 0.85;
+            line-height: 1.5;
+        }
+
+        button {
+            padding: 18px 45px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71, #6a11cb);
+            color: white;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #6a11cb, #e52e71, #ff8a00);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsive design */
+        @media screen and (max-width: 600px) {
+            .welcome-container {
+                padding: 40px;
+                max-width: 85%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            button {
+                font-size: 1.4rem;
+                padding: 15px 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to StudyGenie!</h1>
+        <p>Your personal text summarizer and assistant. Get ready to simplify your learning!</p>
+        <a href="/summarize">
+            <button>Enter</button>
+        </a>
+    </div>
+</body>
+</html>
